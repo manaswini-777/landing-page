@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <style>
+        header{
+            height:100vh;
+            width:100%;
+            background-image: url("https://img.freepik.com/free-photo/flat-lay-vegetables-frame_23-2148516769.jpg");
+            filter:brightness(100%);
+            background-size: cover;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        nav{
+            width:100%;
+            height:100px;
+            display:flex;
+            font-weight: 110;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2.5em;
+            letter-spacing: 2.3px;
+            font-weight: 210;
+            font-style: bold;
+            padding-top: 1.75cm;
+            padding-right: 5.3cm;
+            color:rgb(118, 3, 51)
+        }
+        .menu a{
+            text-decoration: none;
+            color: black;
+            font-size: 21px;
+            padding-top: 1.4cm;
+            padding:10px 20px;
+            position:relative;
+            font-weight: 210;
+        }
+        .menu a:before{
+          content: '';
+          position: absolute;
+          top:0;
+          left:0;
+          width:0%;
+          height:100%;
+          border-bottom: 2px solid rgb(190, 130, 130);
+          transition:0.2s linear;
+        }
+        .menu a:hover:before{
+            width:90%;
+        }
+        .booking a{
+            text-decoration: none;
+            color: white;
+            font-size: 10px;
+            padding-top: 1cm;
+            padding:10px 20px;
+            background: rgb(146, 34, 34);
+        }
+        .booking a:hover{
+            background: transparent;
+            border:2px solid rgb(223, 215, 215);
+        }
+        .caption{
+            max-width: 650px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-80%);
+            text-align: center;
+            color:rgb(100, 2, 2);
+        }
+        .caption span{
+            letter-spacing: 4px;
+            font-size: 1.5em;;
+        }
+        
+        .caption h1{
+            font-size:3.5em;
+            font-style:italic;
+            color: rgb(1, 2, 36);
+        }
+        .caption a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding-top: 2cm;
+            padding:10px 20px;
+            background: rgb(114, 30, 30);
+            border-radius:8px;
+        }
+        .caption a:hover{
+            background: transparent;
+            border:2px solid indianred;
+        }
+        #aboutus 
+        {
+            height:100vh;
+            width:100%;
+            background-image: url("https://img.freepik.com/premium-photo/online-grocery-shopping-home-delivery-concept-with-empty-space-incorporating-grocery-app-f_398492-15947.jpg");
+            filter:brightness(95%);
+            background-size: cover;
+            text-align: center;
+        }
+        #aboutus div>h1
+        {
+            padding-top: 1.5cm;;
+             font-size: 3em;
+             font-family: serif;
+            color:rgb(5, 5, 5);
+        }
+        #aboutus div>h2{
+            font-size: 2.5em;
+            font-family: serif;
+            color:rgb(0, 0, 0);
+        }
+        #aboutus section{
+            text-align: center;
+            font-size:2em;
+            color:rgb(0, 0, 0)
+        }
+        #ourservices{
+            width:100%;
+            height:90vh;
+            background-image:url("https://thumbs.dreamstime.com/z/delivery-concept-handsome-african-american-man-carrying-package-box-grocery-food-drink-store-isolated-grey-studio-247332453.jpg");
+            background-size: cover;
+            filter: brightness(100%);
+            text-align: justify;
+        }
+        #ourservices h1{
+            font-size: 3em;
+            padding-top: 1cm;
+            font-family: serif;
+            color: rgb(7, 7, 7);
+        }
+        #ourservices section{
+            font-size:1.25em;
+            color:rgb(0, 0, 0);
+        }
+        #packages{
+            height:90vh;
+            width:100%;
+            background-image: url("https://img.freepik.com/premium-photo/delivery-healthy-products-vegetables-vegarian_231056-416.jpg");
+            filter:brightness(100%);
+            background-size: cover;
+            text-align: center;
+        }
+        #packages h1{
+
+            text-align: center;
+            font-size: 3.5em;
+            padding-top: 1cm;
+            font-family: serif;
+           color: rgb(10, 10, 10);
+        }
+        #packages p{
+            font-size: 2em;
+            color:rgb(12, 12, 12);
+            text-align: center;
+
+        }
+        #contact
+        {
+            height:80vh;
+            width:100%;
+            background-color: rgb(79, 70, 207);
+            filter:brightness(75%);
+            background-size: cover;
+            text-align: center;
+        }
+        #contact h1{
+            font-size:3.5em;
+            padding-top: 1cm;
+            font-family: serif;
+           color: rgb(250, 249, 249);
+        
+        }
+        #contact section{
+            font-size:1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+         Fudoo! 
+        </div>
+        <div class="menu">
+            <a href="#aboutus">About Us</a>
+            <a href="#ourservice">Groceries</a>
+            <a href="#packages">Products</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="booking">
+            <a href="#">Join us</a>
+        </div>
+        </nav>
+        <section class="caption">
+            <span><b>We Shop And Deliver While You Relax</b></span>
+            <h1>Fudoo Online Groceries</h1>
+            <br>
+            <a href="#">Buy now!</a>
+          
+        </section>
+    
+     </header>
+    <section id="aboutus">
+        <div>
+        <h1>About Us</h1>
+        <h2>Fill Your Cart,Fill Your Heart</h2>
+        </div>
+        <section>
+            <p>With just a few taps on your smartphone, you can browse through a wide selection of groceries, household items, and even specialty products from local stores and supermarkets. These apps typically offer features like personalized recommendations based on your previous purchases, convenient scheduling for deliveries, and the ability to track your order in real-time.
+
+                One of the greatest advantages of grocery delivery apps is their convenience. They save you time and effort by eliminating the need to physically visit a store, navigate crowded aisles, and wait in checkout lines. This is especially beneficial for busy professionals, elderly individuals, or anyone with limited mobility.
+                
+                 <p></p>
+            <p style="color: rgb(107, 19, 19);"></p>
+            <ol></ol></ol>
+         </section>
+    </section>
+    <section id="ourservices">
+       
+            <h1> Groceries </h1>
+            <section>
+                <p>   </p>
+                <p><b style="text-decoration: underline;">Grains</b></p>
+                <p><b>  Bread,pasta,tortillas,buns </b> &emsp;&emsp;&emsp;&emsp; 30/-
+                <p><b style="text-decoration: underline;">Meat</b></p>
+                </p><p><b>  chicken,fish,ground beef,hot dogs</b>&emsp;&emsp;&emsp;270/-</p>
+                <p><b style="text-decoration: underline;">Vegetables</b></p>
+                <p><b> cauliflower,cucumber,mushroom,tomato,brocolli</b>&emsp;&emsp;&emsp;&emsp;40/- </p>
+                <p><b style="text-decoration: underline;">Fruits</b></p>
+                <p><b>  apples,avocado,banana,berries,peaches</b>&emsp;&emsp;&emsp;&emsp;80/-</p>
+                <p><b style="text-decoration: underline;">Condiments</b></p>
+                <p><b>  salad,mayonisse,mustard,spieces</b> &emsp;&emsp;&emsp;100/-</p>
+             </section>
+    </section>
+    <section id="packages">
+        <h1>PRODUCTS</h1>
+       
+        <p > Online grocery stores offer a diverse array of products similar to those found in traditional brick-and-mortar supermarkets. The product categories typically include:
+
+            Fresh Produce: A variety of fruits and vegetables, ranging from common items like apples and carrots to more exotic choices like dragon fruit and kale.
+            
+            Meat and Seafood: Fresh cuts of beef, pork, poultry, and seafood, along with deli meats, sausages, and ready-to-cook options.
+            
+            Dairy and Eggs: Milk, cheese, butter, yogurt, and eggs, including organic and lactose-free options.
+            
+            Bakery and Bread: Freshly baked bread, pastries, cakes, and other baked goods.
+        </p> 
+      
+    </section>
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <section style="color: aliceblue;">
+            <p>For any kind of queries,do reach us.Dial <b style="color: rgb(255, 251, 251);">0000000000 .</b></p>
+            <p>Customer care services on above number are available 24 hours.</p>
+            <p><b style="text-decoration: underline;color:rgb(243, 241, 245)">Locations:</b></p>
+            <p>Hitech city,Hyderabad,Telangana.</p>
+            <p>Bandra,Mumbai,Maharastra.</p>
+            <p>Hanmakonda,Warangal,Telangana.</p>
+            <p>Chennai central,Chennai,Tamil Nadu.</p> 
+            <p></p>
+        </section>
+    </section>
+</body>
+</html>
